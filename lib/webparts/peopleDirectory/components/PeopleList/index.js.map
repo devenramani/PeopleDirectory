@@ -1,0 +1,1 @@
+{"version":3,"sources":["webparts/peopleDirectory/components/PeopleList/index.ts"],"names":[],"mappings":";;;;;AACA,kCAA6B","file":"webparts/peopleDirectory/components/PeopleList/index.js","sourcesContent":["export * from './IPeopleListProps';\r\nexport * from './PeopleList';"],"sourceRoot":"..\\..\\..\\..\\..\\src"}

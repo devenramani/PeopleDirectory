@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "people-directiory-client-side-solution",
+    "id": "fbd15712-b8d4-4722-878f-b6dafa0a5e4f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/people-directiory.sppkg"
+  }
+}

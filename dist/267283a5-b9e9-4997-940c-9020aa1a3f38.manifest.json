@@ -1,0 +1,88 @@
+{
+  "id": "267283a5-b9e9-4997-940c-9020aa1a3f38",
+  "alias": "PeopleDirectoryWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "PeopleDirectory"
+      },
+      "description": {
+        "default": "Search your colleagues"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "PeopleDirectory"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "people-directory-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "people-directory-web-part": {
+        "type": "path",
+        "path": "dist/people-directory-web-part.js"
+      },
+      "PeopleDirectoryWebPartStrings": {
+        "defaultPath": "lib/webparts/peopleDirectory/loc/en-us.js",
+        "type": "localizedPath",
+        "paths": {
+          "de-DE": "lib/webparts/peopleDirectory/loc/de-de.js",
+          "en-US": "lib/webparts/peopleDirectory/loc/en-us.js",
+          "es-ES": "lib/webparts/peopleDirectory/loc/es-es.js",
+          "fr-FR": "lib/webparts/peopleDirectory/loc/fr-fr.js",
+          "nl-NL": "lib/webparts/peopleDirectory/loc/nl-nl.js",
+          "sv-SE": "lib/webparts/peopleDirectory/loc/sv-se.js"
+        }
+      },
+      "ControlStrings": {
+        "defaultPath": "node_modules/@pnp/spfx-controls-react/lib/loc/en-us.js",
+        "type": "localizedPath",
+        "paths": {
+          "de-DE": "node_modules/@pnp/spfx-controls-react/lib/loc/de-de.js",
+          "en-US": "node_modules/@pnp/spfx-controls-react/lib/loc/en-us.js",
+          "fr-FR": "node_modules/@pnp/spfx-controls-react/lib/loc/fr-fr.js",
+          "nl-NL": "node_modules/@pnp/spfx-controls-react/lib/loc/nl-nl.js",
+          "ru-RU": "node_modules/@pnp/spfx-controls-react/lib/loc/ru-ru.js"
+        }
+      },
+      "react": {
+        "type": "component",
+        "version": "15.6.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.6.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webparts/peopleDirectory/components/PeopleCallout/index.ts"],"names":[],"mappings":";;;;;AAEA,qCAAgC","file":"webparts/peopleDirectory/components/PeopleCallout/index.js","sourcesContent":["export * from './IPeopleCalloutProps';\r\nexport * from './IPeopleCalloutState';\r\nexport * from './PeopleCallout';"],"sourceRoot":"..\\..\\..\\..\\..\\src"}
