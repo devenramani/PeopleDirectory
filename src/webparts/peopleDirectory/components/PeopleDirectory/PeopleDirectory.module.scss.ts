@@ -1,16 +1,16 @@
 /* tslint:disable */
 require('./PeopleDirectory.module.css');
 const styles = {
-  peopleDirectory: 'peopleDirectory_addb4e88',
-  container: 'container_addb4e88',
-  row: 'row_addb4e88',
-  column: 'column_addb4e88',
-  'ms-Grid': 'ms-Grid_addb4e88',
-  title: 'title_addb4e88',
-  subTitle: 'subTitle_addb4e88',
-  description: 'description_addb4e88',
-  button: 'button_addb4e88',
-  label: 'label_addb4e88',
+  peopleDirectory: 'peopleDirectory_18da212d',
+  container: 'container_18da212d',
+  row: 'row_18da212d',
+  column: 'column_18da212d',
+  'ms-Grid': 'ms-Grid_18da212d',
+  title: 'title_18da212d',
+  subTitle: 'subTitle_18da212d',
+  description: 'description_18da212d',
+  button: 'button_18da212d',
+  label: 'label_18da212d',
 };
 
 export default styles;

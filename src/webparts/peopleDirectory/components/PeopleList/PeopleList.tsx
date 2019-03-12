@@ -77,7 +77,7 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
             const phone: string = p.phone && p.mobile ? `${p.phone}/${p.mobile}` : p.phone ? p.phone : p.mobile;
             // const toggleClassName: string = this.state.toggleClass ? `ms-Icon--ChromeClose ${styles.isClose}` : "ms-Icon--ContactInfo";
             if (!p.photoUrl) {
-              p.photoUrl = "https://m365x109001-my.sharepoint.com/User%20Photos/Profile%20Pictures/admin_m365x109001_onmicrosoft_com_MThumb.jpg";
+              p.photoUrl = "/_layouts/15/userphoto.aspx?size=L&accountname=";
             }
 
             const expandingCardProps: IExpandingCardProps = {

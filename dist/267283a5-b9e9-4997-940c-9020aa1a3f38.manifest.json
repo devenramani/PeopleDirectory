@@ -35,26 +35,11 @@
       },
       "PeopleDirectoryWebPartStrings": {
         "defaultPath": "lib/webparts/peopleDirectory/loc/en-us.js",
-        "type": "localizedPath",
-        "paths": {
-          "de-DE": "lib/webparts/peopleDirectory/loc/de-de.js",
-          "en-US": "lib/webparts/peopleDirectory/loc/en-us.js",
-          "es-ES": "lib/webparts/peopleDirectory/loc/es-es.js",
-          "fr-FR": "lib/webparts/peopleDirectory/loc/fr-fr.js",
-          "nl-NL": "lib/webparts/peopleDirectory/loc/nl-nl.js",
-          "sv-SE": "lib/webparts/peopleDirectory/loc/sv-se.js"
-        }
+        "type": "localizedPath"
       },
       "ControlStrings": {
         "defaultPath": "node_modules/@pnp/spfx-controls-react/lib/loc/en-us.js",
-        "type": "localizedPath",
-        "paths": {
-          "de-DE": "node_modules/@pnp/spfx-controls-react/lib/loc/de-de.js",
-          "en-US": "node_modules/@pnp/spfx-controls-react/lib/loc/en-us.js",
-          "fr-FR": "node_modules/@pnp/spfx-controls-react/lib/loc/fr-fr.js",
-          "nl-NL": "node_modules/@pnp/spfx-controls-react/lib/loc/nl-nl.js",
-          "ru-RU": "node_modules/@pnp/spfx-controls-react/lib/loc/ru-ru.js"
-        }
+        "type": "localizedPath"
       },
       "react": {
         "type": "component",

@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./PeopleCallout.module.css');
 const styles = {
-  calloutCard: 'calloutCard_29e40aeb',
-  PeopleCallout: 'PeopleCallout_29e40aeb',
-  info: 'info_29e40aeb',
-  fl_column: 'fl_column_29e40aeb',
-  clipboard: 'clipboard_29e40aeb',
+  calloutCard: 'calloutCard_aec1aea3',
+  PeopleCallout: 'PeopleCallout_aec1aea3',
+  info: 'info_aec1aea3',
+  fl_column: 'fl_column_aec1aea3',
+  clipboard: 'clipboard_aec1aea3',
 };
 
 export default styles;

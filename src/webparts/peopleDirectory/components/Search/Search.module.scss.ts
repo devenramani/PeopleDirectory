@@ -1,8 +1,8 @@
 /* tslint:disable */
 require('./Search.module.css');
 const styles = {
-  search: 'search_0b2a9b2b',
-  searchBox: 'searchBox_0b2a9b2b',
+  search: 'search_e01aa005',
+  searchBox: 'searchBox_e01aa005',
 };
 
 export default styles;
