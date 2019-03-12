@@ -754,7 +754,7 @@ function getManifests() {
         "description": {
           "default": "Search your colleagues"
         },
-        "officeFabricIconFontName": "Page",
+        "officeFabricIconFontName": "People",
         "properties": {
           "description": "PeopleDirectory"
         }

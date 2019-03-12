@@ -60,4 +60,21 @@
     height: 80%;
   }
 
+  .profile_image_hover{
+    width: 50%;
+    height: 30%;
+  }
+
+  .compactCard{
+    padding: 10% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+  }
+
+  .expandedCard{
+    padding: 16px 24px;
+  }
+
 }

@@ -18,28 +18,6 @@ import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
 
 import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 
-
-const classNames = mergeStyleSets({
-  compactCard: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100%'
-  },
-  expandedCard: {
-    padding: '16px 24px'
-  },
-  item: {
-    selectors: {
-      '&:hover': {
-        textDecoration: 'underline',
-        cursor: 'pointer'
-      }
-    }
-  }
-});
-
-
 export class PeopleList extends React.Component<IPeopleListProps, IPeopleListState> {
   constructor(props: IPeopleListProps) {
     super(props);
@@ -49,7 +27,6 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
       calloutElement: null,
       person: null,
       showPanel: false
-
     };
 
     //this._onPersonaClicked = this._onPersonaClicked.bind(this);
@@ -77,7 +54,7 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
             const phone: string = p.phone && p.mobile ? `${p.phone}/${p.mobile}` : p.phone ? p.phone : p.mobile;
             // const toggleClassName: string = this.state.toggleClass ? `ms-Icon--ChromeClose ${styles.isClose}` : "ms-Icon--ContactInfo";
             if (!p.photoUrl) {
-              p.photoUrl = "/_layouts/15/userphoto.aspx?size=L&accountname=";
+              p.photoUrl = "/_layouts/15/userphoto.aspx?size=L&accountname";
             }
 
             const expandingCardProps: IExpandingCardProps = {
@@ -93,54 +70,23 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
                   <div id={`callout${i}`} onClick={this._onPersonaClicked(i, p)} className={styles.persona}>
                     <i className="ms-Icon ms-Icon--ContactInfo" aria-hidden="true"></i>
                   </div> */}
-                {/* <HoverCard expandingCardProps={expandingCardProps} instantOpenOnClick={true}>
+                <HoverCard expandingCardProps={expandingCardProps} instantOpenOnClick={true}>
                   <div className={styles.card}>
                     <img src={p.photoUrl} className={styles.profile_image} />
                     <div className={styles.container}>
                       <h4><b>{p.name}</b></h4>
                     </div>
                   </div>
-                </HoverCard> */}
-
-                <div className={styles.card}>
-                  <img src={p.photoUrl} className={styles.profile_image} />
-                  <div className={styles.container}>
-                    <h4><b>{p.name}</b></h4>
-
-                    <div id={`callout${i}`} onClick={this._onPersonaClicked(i, p)} className={styles.persona}>
-                      <i className="ms-Icon ms-Icon--ContactInfo" aria-hidden="true"></i>
-                    </div>
-
-                  </div>
-                </div>
-
-                {this.state.showCallOut && this.state.calloutElement === i && (
-                  <Callout
-                    className={this.state.showCallOut ? styles.calloutShow : styles.callout}
-                    gapSpace={16}
-                    target={`#callout${i}`}
-                    isBeakVisible={true}
-                    beakWidth={18}
-                    setInitialFocus={true}
-                    onDismiss={this._onCalloutDismiss}
-                    directionalHint={DirectionalHint.rightCenter}
-                    doNotLayer={false}
-                  >
-                    <PeopleCallout person={this.state.person}></PeopleCallout>
-                  </Callout>
-                )}
+                </HoverCard>
                 
-                <Panel isOpen={this.state.showPanel} isLightDismiss={true} headerText="Light Dismiss Panel" onDismiss={this._hidePanel}>
-                  <span>Light Dismiss usage is meant for the Contextual Menu on mobile sized breakpoints.</span>
+                <Panel isOpen={this.state.showPanel} type={PanelType.medium} headerText="Panel" onDismiss={this._hidePanel}>
+                  <span>Test</span>
                 </Panel>
               </div>
-
             );
           })
-
         }
       </div>
-
     );
   }
 
@@ -154,18 +100,16 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
 
   private _onRenderCompactCard = (p): JSX.Element => {
     return (
-      <div className={classNames.compactCard}>
-        <a target="_blank" href={``}>
-          {p.name}
-        </a>
-
+      
+      <div className={styles.compactCard}>
+          <h2>{p.name}</h2>
       </div>
     );
   };
 
   private _onRenderExpandedCard = (p): JSX.Element => {
     return (
-      <div className={classNames.expandedCard}>
+      <div className={styles.expandedCard}>
         {p.department}
         {p.function}
         {p.skills}

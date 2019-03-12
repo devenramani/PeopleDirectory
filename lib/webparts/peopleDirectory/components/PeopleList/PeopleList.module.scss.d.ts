@@ -6,5 +6,8 @@ declare const styles: {
     card: string;
     container: string;
     profile_image: string;
+    profile_image_hover: string;
+    compactCard: string;
+    expandedCard: string;
 };
 export default styles;
