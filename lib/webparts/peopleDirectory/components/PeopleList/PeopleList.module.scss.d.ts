@@ -8,6 +8,7 @@ declare const styles: {
     profile_image: string;
     profile_image_hover: string;
     compactCard: string;
+    half: string;
     expandedCard: string;
 };
 export default styles;

@@ -92,20 +92,19 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
 
   private _showPanel = (): void => {
     this.setState({ showPanel: true });
-  };
+  }
 
   private _hidePanel = (): void => {
     this.setState({ showPanel: false });
-  };
+  }
 
   private _onRenderCompactCard = (p): JSX.Element => {
-    return (
-      
+    return ( 
       <div className={styles.compactCard}>
-          <h2>{p.name}</h2>
+        <Persona primaryText={p.name} secondaryText={p.email} tertiaryText={p.phone} imageUrl={p.photoUrl} imageAlt={p.name} size={PersonaSize.size72} />
       </div>
     );
-  };
+  }
 
   private _onRenderExpandedCard = (p): JSX.Element => {
     return (
@@ -114,11 +113,10 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
         {p.function}
         {p.skills}
         {p.projects}
-        <DefaultButton text="Open panel" onClick={this._showPanel} />
+        <DefaultButton text="Show More" onClick={this._showPanel} />
       </div>
     );
-  };
-
+  }
 
   private _onPersonaClicked = (index, person) => event => {
     this.setState({
