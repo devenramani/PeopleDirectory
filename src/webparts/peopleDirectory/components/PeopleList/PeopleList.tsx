@@ -12,7 +12,7 @@ import { PeopleCallout } from '../PeopleCallout';
 
 import { HoverCard, IExpandingCardProps } from 'office-ui-fabric-react/lib/HoverCard';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-
+import { Link } from 'office-ui-fabric-react/lib/Link';
 import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
 import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
 
@@ -45,6 +45,11 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
           // a search query (but not when navigated to the Search tab without
           // providing a query yet)
           <div className='ms-textAlignCenter'>{strings.NoPeopleFoundLabel}</div>}
+
+        <Panel isOpen={this.state.showPanel} type={PanelType.medium} onDismiss={this._hidePanel}>
+
+        </Panel>
+
         {this.props.people.length > 0 &&
           // for each retrieved person, create a persona card with the retrieved
           // information
@@ -66,10 +71,7 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
 
             return (
               <div className={`ms-Grid-col  ${styles.persona_card}`}>
-                {/* <Persona primaryText={p.name} secondaryText={p.email} tertiaryText={phone} imageUrl={p.photoUrl} imageAlt={p.name} size={PersonaSize.size48} />
-                  <div id={`callout${i}`} onClick={this._onPersonaClicked(i, p)} className={styles.persona}>
-                    <i className="ms-Icon ms-Icon--ContactInfo" aria-hidden="true"></i>
-                  </div> */}
+
                 <HoverCard expandingCardProps={expandingCardProps} instantOpenOnClick={true}>
                   <div className={styles.card}>
                     <img src={p.photoUrl} className={styles.profile_image} />
@@ -78,10 +80,6 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
                     </div>
                   </div>
                 </HoverCard>
-                
-                <Panel isOpen={this.state.showPanel} type={PanelType.medium} headerText="Panel" onDismiss={this._hidePanel}>
-                  <span>Test</span>
-                </Panel>
               </div>
             );
           })
@@ -99,7 +97,7 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
   }
 
   private _onRenderCompactCard = (p): JSX.Element => {
-    return ( 
+    return (
       <div className={styles.compactCard}>
         <Persona primaryText={p.name} secondaryText={p.email} tertiaryText={p.phone} imageUrl={p.photoUrl} imageAlt={p.name} size={PersonaSize.size72} />
       </div>
@@ -107,23 +105,16 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
   }
 
   private _onRenderExpandedCard = (p): JSX.Element => {
+
     return (
       <div className={styles.expandedCard}>
         {p.department}
         {p.function}
         {p.skills}
         {p.projects}
-        <DefaultButton text="Show More" onClick={this._showPanel} />
+        <Link onClick={ this._showPanel}> Show more</Link>
       </div>
     );
-  }
-
-  private _onPersonaClicked = (index, person) => event => {
-    this.setState({
-      showCallOut: !this.state.showCallOut,
-      calloutElement: index,
-      person: person
-    });
   }
 
   private _onCalloutDismiss = (event) => {

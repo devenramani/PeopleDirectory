@@ -1,4 +1,4 @@
-define("267283a5-b9e9-4997-940c-9020aa1a3f38_0.0.1", ["react","@microsoft/sp-core-library","PeopleDirectoryWebPartStrings","react-dom","@microsoft/sp-webpart-base","@microsoft/sp-http","ControlStrings"], function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_21__, __WEBPACK_EXTERNAL_MODULE_32__, __WEBPACK_EXTERNAL_MODULE_37__, __WEBPACK_EXTERNAL_MODULE_81__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_199__) { return /******/ (function(modules) { // webpackBootstrap
+define("267283a5-b9e9-4997-940c-9020aa1a3f38_0.0.1", ["react","@microsoft/sp-core-library","PeopleDirectoryWebPartStrings","react-dom","@microsoft/sp-webpart-base","@microsoft/sp-http","ControlStrings"], function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_20__, __WEBPACK_EXTERNAL_MODULE_32__, __WEBPACK_EXTERNAL_MODULE_37__, __WEBPACK_EXTERNAL_MODULE_81__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_199__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -1635,7 +1635,7 @@ var PersonaInitialsColor;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 /* tslint:disable:no-string-literal */
-var object_1 = __webpack_require__(22);
+var object_1 = __webpack_require__(21);
 /** An instance of EventGroup allows anything with a handle to it to trigger events on it.
  *  If the target is an HTMLElement, the event will be attached to the element and can be
  *  triggered as usual (like clicking for onclick).
@@ -2097,17 +2097,6 @@ exports.styleToClassName = styleToClassName;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
-tslib_1.__exportStar(__webpack_require__(137), exports);
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var tslib_1 = __webpack_require__(0);
 var AnimationStyles_1 = __webpack_require__(145);
 exports.AnimationStyles = AnimationStyles_1.AnimationStyles;
 exports.AnimationVariables = AnimationStyles_1.AnimationVariables;
@@ -2143,7 +2132,7 @@ tslib_1.__exportStar(__webpack_require__(60), exports);
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2211,7 +2200,7 @@ var DirectionalHint;
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2245,7 +2234,7 @@ exports.DefaultButton = DefaultButton;
 
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2313,7 +2302,7 @@ exports.getStyles = Utilities_1.memoizeFunction(function (theme, customStyles) {
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2375,13 +2364,13 @@ exports.rootIsOffline = "rootIsOffline_f25bdfc3";
 
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_21__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_20__;
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2509,7 +2498,7 @@ exports.values = values;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(93)))
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2607,7 +2596,7 @@ exports.setWarningCallback = setWarningCallback;
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2660,14 +2649,14 @@ function _onKeyDown(ev) {
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
-var GlobalSettings_1 = __webpack_require__(26);
+var GlobalSettings_1 = __webpack_require__(25);
 var EventGroup_1 = __webpack_require__(13);
 var CustomizationsGlobalKey = 'customizations';
 var NO_CUSTOMIZATIONS = { settings: {}, scopedSettings: {} };
@@ -2725,7 +2714,7 @@ exports.Customizations = Customizations;
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2801,6 +2790,17 @@ var GlobalSettings = /** @class */ (function () {
 }());
 exports.GlobalSettings = GlobalSettings;
 var _a;
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(0);
+tslib_1.__exportStar(__webpack_require__(137), exports);
 
 
 /***/ }),
@@ -3116,7 +3116,7 @@ var TooltipDelay;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var Persona_Props_1 = __webpack_require__(12);
-var stylesImport = __webpack_require__(20);
+var stylesImport = __webpack_require__(19);
 var styles = stylesImport;
 exports.PERSONA_SIZE = (_a = {},
     // All non-numerically named sizes are deprecated, use the numerically named classes below
@@ -3978,8 +3978,8 @@ var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
 var Async_1 = __webpack_require__(39);
 var EventGroup_1 = __webpack_require__(13);
-var warn_1 = __webpack_require__(23);
-var initializeFocusRects_1 = __webpack_require__(24);
+var warn_1 = __webpack_require__(22);
+var initializeFocusRects_1 = __webpack_require__(23);
 var initializeDir_1 = __webpack_require__(102);
 /**
  * BaseComponent class, which provides basic helpers for all components.
@@ -4705,8 +4705,8 @@ exports.mergeStyles = index_1.mergeStyles;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
-var warn_1 = __webpack_require__(23);
-var GlobalSettings_1 = __webpack_require__(26);
+var warn_1 = __webpack_require__(22);
+var GlobalSettings_1 = __webpack_require__(25);
 var index_1 = __webpack_require__(5);
 var ICON_SETTING_NAME = 'icons';
 var _iconSettings = GlobalSettings_1.GlobalSettings.getValue(ICON_SETTING_NAME, {
@@ -5093,7 +5093,7 @@ var ZIndexes;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var DirectionalHint_1 = __webpack_require__(17);
+var DirectionalHint_1 = __webpack_require__(16);
 exports.DirectionalHint = DirectionalHint_1.DirectionalHint;
 var ContextualMenuItemType;
 (function (ContextualMenuItemType) {
@@ -5417,7 +5417,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
 var Utilities_1 = __webpack_require__(1);
-var DefaultButton_1 = __webpack_require__(18);
+var DefaultButton_1 = __webpack_require__(17);
 var PrimaryButton = /** @class */ (function (_super) {
     tslib_1.__extends(PrimaryButton, _super);
     function PrimaryButton() {
@@ -5581,7 +5581,7 @@ var PersonaPresence_1 = __webpack_require__(237);
 var Persona_Props_1 = __webpack_require__(12);
 var PersonaConsts_1 = __webpack_require__(35);
 var Icon_1 = __webpack_require__(7);
-var stylesImport = __webpack_require__(20);
+var stylesImport = __webpack_require__(19);
 var styles = stylesImport;
 var SIZE_TO_PIXELS = (_a = {},
     _a[Persona_Props_1.PersonaSize.tiny] = 20,
@@ -5925,7 +5925,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(2);
 var ReactDom = __webpack_require__(37);
-var sp_core_library_1 = __webpack_require__(21);
+var sp_core_library_1 = __webpack_require__(20);
 var sp_webpart_base_1 = __webpack_require__(81);
 var _1 = __webpack_require__(82);
 var PeopleDirectoryWebPart = (function (_super) {
@@ -6357,12 +6357,12 @@ tslib_1.__exportStar(__webpack_require__(39), exports);
 tslib_1.__exportStar(__webpack_require__(92), exports);
 tslib_1.__exportStar(__webpack_require__(44), exports);
 tslib_1.__exportStar(__webpack_require__(103), exports);
-tslib_1.__exportStar(__webpack_require__(25), exports);
+tslib_1.__exportStar(__webpack_require__(24), exports);
 tslib_1.__exportStar(__webpack_require__(104), exports);
 tslib_1.__exportStar(__webpack_require__(109), exports);
 tslib_1.__exportStar(__webpack_require__(13), exports);
 tslib_1.__exportStar(__webpack_require__(110), exports);
-tslib_1.__exportStar(__webpack_require__(26), exports);
+tslib_1.__exportStar(__webpack_require__(25), exports);
 tslib_1.__exportStar(__webpack_require__(111), exports);
 tslib_1.__exportStar(__webpack_require__(112), exports);
 tslib_1.__exportStar(__webpack_require__(113), exports);
@@ -6376,13 +6376,13 @@ tslib_1.__exportStar(__webpack_require__(6), exports);
 tslib_1.__exportStar(__webpack_require__(120), exports);
 tslib_1.__exportStar(__webpack_require__(121), exports);
 tslib_1.__exportStar(__webpack_require__(49), exports);
-tslib_1.__exportStar(__webpack_require__(24), exports);
+tslib_1.__exportStar(__webpack_require__(23), exports);
 tslib_1.__exportStar(__webpack_require__(122), exports);
 tslib_1.__exportStar(__webpack_require__(45), exports);
 tslib_1.__exportStar(__webpack_require__(50), exports);
 tslib_1.__exportStar(__webpack_require__(124), exports);
 tslib_1.__exportStar(__webpack_require__(125), exports);
-tslib_1.__exportStar(__webpack_require__(22), exports);
+tslib_1.__exportStar(__webpack_require__(21), exports);
 tslib_1.__exportStar(__webpack_require__(126), exports);
 tslib_1.__exportStar(__webpack_require__(127), exports);
 tslib_1.__exportStar(__webpack_require__(128), exports);
@@ -6390,7 +6390,7 @@ tslib_1.__exportStar(__webpack_require__(129), exports);
 tslib_1.__exportStar(__webpack_require__(40), exports);
 tslib_1.__exportStar(__webpack_require__(131), exports);
 tslib_1.__exportStar(__webpack_require__(132), exports);
-tslib_1.__exportStar(__webpack_require__(23), exports);
+tslib_1.__exportStar(__webpack_require__(22), exports);
 
 
 /***/ }),
@@ -8696,7 +8696,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
 var PropTypes = __webpack_require__(46);
-var Customizations_1 = __webpack_require__(25);
+var Customizations_1 = __webpack_require__(24);
 var hoistStatics_1 = __webpack_require__(49);
 function customizable(scope, fields
 // tslint:disable-next-line:no-any
@@ -9434,7 +9434,7 @@ exports.hasOverflow = hasOverflow;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var object_1 = __webpack_require__(22);
+var object_1 = __webpack_require__(21);
 /**
  * An array of events that are allowed on every html element type.
  *
@@ -9970,7 +9970,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
 var Utilities_1 = __webpack_require__(1);
-var Button_1 = __webpack_require__(15);
+var Button_1 = __webpack_require__(26);
 var Icon_1 = __webpack_require__(7);
 var MessageBar_Props_1 = __webpack_require__(72);
 var stylesImport = __webpack_require__(195);
@@ -10095,7 +10095,7 @@ tslib_1.__exportStar(__webpack_require__(31), exports);
 tslib_1.__exportStar(__webpack_require__(191), exports);
 tslib_1.__exportStar(__webpack_require__(71), exports);
 tslib_1.__exportStar(__webpack_require__(68), exports);
-tslib_1.__exportStar(__webpack_require__(18), exports);
+tslib_1.__exportStar(__webpack_require__(17), exports);
 tslib_1.__exportStar(__webpack_require__(71), exports);
 tslib_1.__exportStar(__webpack_require__(193), exports);
 tslib_1.__exportStar(__webpack_require__(70), exports);
@@ -10170,7 +10170,7 @@ exports.Icon = function (props) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 tslib_1.__exportStar(__webpack_require__(141), exports);
-tslib_1.__exportStar(__webpack_require__(16), exports);
+tslib_1.__exportStar(__webpack_require__(15), exports);
 tslib_1.__exportStar(__webpack_require__(27), exports);
 tslib_1.__exportStar(__webpack_require__(55), exports);
 
@@ -10198,7 +10198,7 @@ exports.ColorClassNames = ColorClassNames_1.ColorClassNames;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = __webpack_require__(27);
-var index_2 = __webpack_require__(16);
+var index_2 = __webpack_require__(15);
 exports.AnimationClassNames = index_1.buildClassMap(index_2.AnimationStyles);
 
 
@@ -10446,7 +10446,7 @@ function _createSlideOutY(toY) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var CommonStyles_1 = __webpack_require__(59);
-var initializeFocusRects_1 = __webpack_require__(24);
+var initializeFocusRects_1 = __webpack_require__(23);
 var zIndexes_1 = __webpack_require__(60);
 /**
  * Generates a focus style which can be used to define an :after focus border.
@@ -10648,7 +10648,7 @@ exports.getGlobalClassNames = getGlobalClassNames;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
-var Customizations_1 = __webpack_require__(25);
+var Customizations_1 = __webpack_require__(24);
 var DefaultFontStyles_1 = __webpack_require__(57);
 var DefaultPalette_1 = __webpack_require__(28);
 var load_themed_styles_1 = __webpack_require__(151);
@@ -11245,7 +11245,7 @@ exports.noWrap = {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = __webpack_require__(27);
-var index_2 = __webpack_require__(16);
+var index_2 = __webpack_require__(15);
 exports.FontClassNames = index_1.buildClassMap(index_2.DefaultFontStyles);
 
 
@@ -11258,7 +11258,7 @@ exports.FontClassNames = index_1.buildClassMap(index_2.DefaultFontStyles);
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = __webpack_require__(5);
 var DefaultPalette_1 = __webpack_require__(28);
-var index_2 = __webpack_require__(16);
+var index_2 = __webpack_require__(15);
 exports.ColorClassNames = {};
 for (var colorName in DefaultPalette_1.DefaultPalette) {
     if (DefaultPalette_1.DefaultPalette.hasOwnProperty(colorName)) {
@@ -13072,7 +13072,7 @@ exports.BaseDecorator = BaseDecorator;
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 tslib_1.__exportStar(__webpack_require__(167), exports);
-tslib_1.__exportStar(__webpack_require__(17), exports);
+tslib_1.__exportStar(__webpack_require__(16), exports);
 
 
 /***/ }),
@@ -14443,7 +14443,7 @@ var React = __webpack_require__(2);
 /* tslint:enable:no-unused-variable */
 var Utilities_1 = __webpack_require__(1);
 var Button_Props_1 = __webpack_require__(66);
-var DefaultButton_1 = __webpack_require__(18);
+var DefaultButton_1 = __webpack_require__(17);
 var ActionButton_1 = __webpack_require__(31);
 var CompoundButton_1 = __webpack_require__(68);
 var IconButton_1 = __webpack_require__(69);
@@ -14494,7 +14494,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Styling_1 = __webpack_require__(3);
 var Utilities_1 = __webpack_require__(1);
 var BaseButton_styles_1 = __webpack_require__(10);
-var SplitButton_styles_1 = __webpack_require__(19);
+var SplitButton_styles_1 = __webpack_require__(18);
 var ButtonThemes_1 = __webpack_require__(67);
 var DEFAULT_BUTTON_HEIGHT = '32px';
 var DEFAULT_BUTTON_MINWIDTH = '80px';
@@ -14590,7 +14590,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Styling_1 = __webpack_require__(3);
 var Utilities_1 = __webpack_require__(1);
 var BaseButton_styles_1 = __webpack_require__(10);
-var SplitButton_styles_1 = __webpack_require__(19);
+var SplitButton_styles_1 = __webpack_require__(18);
 var ButtonThemes_1 = __webpack_require__(67);
 exports.getStyles = Utilities_1.memoizeFunction(function (theme, customStyles, primary) {
     var baseButtonStyles = BaseButton_styles_1.getStyles(theme);
@@ -14679,7 +14679,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Styling_1 = __webpack_require__(3);
 var Utilities_1 = __webpack_require__(1);
 var BaseButton_styles_1 = __webpack_require__(10);
-var SplitButton_styles_1 = __webpack_require__(19);
+var SplitButton_styles_1 = __webpack_require__(18);
 exports.getStyles = Utilities_1.memoizeFunction(function (theme, customStyles) {
     var baseButtonStyles = BaseButton_styles_1.getStyles(theme);
     var splitButtonStyles = SplitButton_styles_1.getStyles(theme);
@@ -14757,7 +14757,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Styling_1 = __webpack_require__(3);
 var Utilities_1 = __webpack_require__(1);
 var BaseButton_styles_1 = __webpack_require__(10);
-var SplitButton_styles_1 = __webpack_require__(19);
+var SplitButton_styles_1 = __webpack_require__(18);
 exports.getStyles = Utilities_1.memoizeFunction(function (theme, customStyles, focusInset, focusColor) {
     var baseButtonStyles = BaseButton_styles_1.getStyles(theme);
     var baseSplitButtonStyles = SplitButton_styles_1.getStyles(theme);
@@ -14811,7 +14811,7 @@ exports.getStyles = Utilities_1.memoizeFunction(function (theme, customStyles, f
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
-var DefaultButton_1 = __webpack_require__(18);
+var DefaultButton_1 = __webpack_require__(17);
 var Utilities_1 = __webpack_require__(1);
 var MessageBarButton_styles_1 = __webpack_require__(194);
 var MessageBarButton = /** @class */ (function (_super) {
@@ -14941,7 +14941,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(2);
 var strings = __webpack_require__(199);
-var sp_core_library_1 = __webpack_require__(21);
+var sp_core_library_1 = __webpack_require__(20);
 var WebPartTitle_module_scss_1 = __webpack_require__(200);
 var telemetry = __webpack_require__(203);
 /**
@@ -15053,7 +15053,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var telemetry_js_1 = __webpack_require__(204);
 var version_1 = __webpack_require__(206);
-var sp_core_library_1 = __webpack_require__(21);
+var sp_core_library_1 = __webpack_require__(20);
 var CONTROL_TYPE = "react";
 /**
  * Track control information
@@ -16123,7 +16123,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
 var Utilities_1 = __webpack_require__(1);
-var Button_1 = __webpack_require__(15);
+var Button_1 = __webpack_require__(26);
 var FocusZone_1 = __webpack_require__(62);
 var PivotItem_1 = __webpack_require__(73);
 var Pivot_Props_1 = __webpack_require__(33);
@@ -16382,8 +16382,8 @@ var Persona_1 = __webpack_require__(227);
 var strings = __webpack_require__(32);
 var PeopleList_module_scss_1 = __webpack_require__(238);
 var HoverCard_1 = __webpack_require__(241);
-var Panel_1 = __webpack_require__(248);
-var Button_1 = __webpack_require__(15);
+var Link_1 = __webpack_require__(248);
+var Panel_1 = __webpack_require__(252);
 var PeopleList = (function (_super) {
     __extends(PeopleList, _super);
     function PeopleList(props) {
@@ -16404,15 +16404,8 @@ var PeopleList = (function (_super) {
                 p.function,
                 p.skills,
                 p.projects,
-                React.createElement(Button_1.DefaultButton, { text: "Show More", onClick: _this._showPanel })));
+                React.createElement(Link_1.Link, { onClick: _this._showPanel }, " Show more")));
         };
-        _this._onPersonaClicked = function (index, person) { return function (event) {
-            _this.setState({
-                showCallOut: !_this.state.showCallOut,
-                calloutElement: index,
-                person: person
-            });
-        }; };
         _this._onCalloutDismiss = function (event) {
             _this.setState({
                 showCallOut: false,
@@ -16440,6 +16433,7 @@ var PeopleList = (function (_super) {
                 // a search query (but not when navigated to the Search tab without
                 // providing a query yet)
                 React.createElement("div", { className: 'ms-textAlignCenter' }, strings.NoPeopleFoundLabel),
+            React.createElement(Panel_1.Panel, { isOpen: this.state.showPanel, type: Panel_1.PanelType.medium, onDismiss: this._hidePanel }),
             this.props.people.length > 0 &&
                 // for each retrieved person, create a persona card with the retrieved
                 // information
@@ -16461,9 +16455,7 @@ var PeopleList = (function (_super) {
                                 React.createElement("img", { src: p.photoUrl, className: PeopleList_module_scss_1.default.profile_image }),
                                 React.createElement("div", { className: PeopleList_module_scss_1.default.container },
                                     React.createElement("h4", null,
-                                        React.createElement("b", null, p.name))))),
-                        React.createElement(Panel_1.Panel, { isOpen: _this.state.showPanel, type: Panel_1.PanelType.medium, headerText: "Panel", onDismiss: _this._hidePanel },
-                            React.createElement("span", null, "Test"))));
+                                        React.createElement("b", null, p.name)))))));
                 })));
     };
     return PeopleList;
@@ -16511,7 +16503,7 @@ var Tooltip_1 = __webpack_require__(230);
 var PersonaCoin_1 = __webpack_require__(76);
 var Persona_Props_1 = __webpack_require__(12);
 var PersonaConsts_1 = __webpack_require__(35);
-var stylesImport = __webpack_require__(20);
+var stylesImport = __webpack_require__(19);
 var styles = stylesImport;
 var Persona = /** @class */ (function (_super) {
     tslib_1.__extends(Persona, _super);
@@ -16589,7 +16581,7 @@ tslib_1.__exportStar(__webpack_require__(74), exports);
 tslib_1.__exportStar(__webpack_require__(34), exports);
 tslib_1.__exportStar(__webpack_require__(233), exports);
 tslib_1.__exportStar(__webpack_require__(75), exports);
-tslib_1.__exportStar(__webpack_require__(17), exports);
+tslib_1.__exportStar(__webpack_require__(16), exports);
 
 
 /***/ }),
@@ -16747,7 +16739,7 @@ var React = __webpack_require__(2);
 var Utilities_1 = __webpack_require__(1);
 var Icon_1 = __webpack_require__(7);
 var Persona_Props_1 = __webpack_require__(12);
-var stylesImport = __webpack_require__(20);
+var stylesImport = __webpack_require__(19);
 var styles = stylesImport;
 var PersonaPresence = /** @class */ (function (_super) {
     tslib_1.__extends(PersonaPresence, _super);
@@ -16867,7 +16859,7 @@ var tslib_1 = __webpack_require__(0);
 tslib_1.__exportStar(__webpack_require__(77), exports);
 tslib_1.__exportStar(__webpack_require__(36), exports);
 tslib_1.__exportStar(__webpack_require__(246), exports);
-tslib_1.__exportStar(__webpack_require__(17), exports);
+tslib_1.__exportStar(__webpack_require__(16), exports);
 
 
 /***/ }),
@@ -17270,11 +17262,88 @@ tslib_1.__exportStar(__webpack_require__(249), exports);
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 tslib_1.__exportStar(__webpack_require__(250), exports);
-tslib_1.__exportStar(__webpack_require__(79), exports);
 
 
 /***/ }),
 /* 250 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(0);
+var React = __webpack_require__(2);
+var Utilities_1 = __webpack_require__(1);
+var stylesImport = __webpack_require__(251);
+var styles = stylesImport;
+var Link = /** @class */ (function (_super) {
+    tslib_1.__extends(Link, _super);
+    function Link() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Link.prototype.render = function () {
+        var _a = this.props, disabled = _a.disabled, children = _a.children, className = _a.className, href = _a.href;
+        return (href ? (React.createElement("a", tslib_1.__assign({}, Utilities_1.getNativeProps(this.props, Utilities_1.anchorProperties), { className: Utilities_1.css('ms-Link', styles.root, className, disabled && ('is-disabled ' + styles.isDisabled), !disabled && styles.isEnabled), onClick: this._onClick, ref: this._resolveRef('_link'), target: this.props.target }), children)) : (React.createElement("button", tslib_1.__assign({}, Utilities_1.getNativeProps(this.props, Utilities_1.buttonProperties), { className: Utilities_1.css('ms-Link', styles.root, className, disabled && ('is-disabled ' + styles.isDisabled)), onClick: this._onClick, ref: this._resolveRef('_link') }), children)));
+    };
+    Link.prototype.focus = function () {
+        if (this._link) {
+            this._link.focus();
+        }
+    };
+    Link.prototype._onClick = function (ev) {
+        var onClick = this.props.onClick;
+        if (onClick) {
+            onClick(ev);
+        }
+    };
+    tslib_1.__decorate([
+        Utilities_1.autobind
+    ], Link.prototype, "_onClick", null);
+    return Link;
+}(Utilities_1.BaseComponent));
+exports.Link = Link;
+
+
+/***/ }),
+/* 251 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+/* tslint:disable */
+var load_themed_styles_1 = __webpack_require__(4);
+load_themed_styles_1.loadStyles([{ "rawString": ".root_63fb318e{color:" }, { "theme": "themePrimary", "defaultValue": "#0078d7" }, { "rawString": ";margin:0;overflow:inherit;padding:0;text-overflow:inherit}.isEnabled_63fb318e:hover,.isEnabled_63fb318e:focus{color:" }, { "theme": "themeDarker", "defaultValue": "#004578" }, { "rawString": "}.isEnabled_63fb318e:active{color:" }, { "theme": "themePrimary", "defaultValue": "#0078d7" }, { "rawString": "}.isDisabled_63fb318e{color:" }, { "theme": "neutralTertiary", "defaultValue": "#a6a6a6" }, { "rawString": ";pointer-events:none;cursor:default}button.root_63fb318e{background:none;border:none;cursor:pointer;display:inline;font-size:inherit}button.root_63fb318e::-moz-focus-inner{border:0}button.root_63fb318e{outline:transparent}button.root_63fb318e{position:relative}.ms-Fabric.is-focusVisible button.root_63fb318e:focus:after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;border:1px solid " }, { "theme": "focusBorder", "defaultValue": "#000000" }, { "rawString": "}html[dir='ltr'] button.root_63fb318e{text-align:left}html[dir='rtl'] button.root_63fb318e{text-align:right}@media screen and (-ms-high-contrast: active){button.root_63fb318e{color:Highlight}}a.root_63fb318e{text-decoration:none}.ms-Fabric.is-focusVisible a.root_63fb318e:focus{outline:1px solid " }, { "theme": "focusBorder", "defaultValue": "#000000" }, { "rawString": "}\n" }]);
+exports.root = "root_63fb318e";
+exports.isEnabled = "isEnabled_63fb318e";
+exports.isDisabled = "isDisabled_63fb318e";
+
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(0);
+tslib_1.__exportStar(__webpack_require__(253), exports);
+
+
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(0);
+tslib_1.__exportStar(__webpack_require__(254), exports);
+tslib_1.__exportStar(__webpack_require__(79), exports);
+
+
+/***/ }),
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17288,11 +17357,11 @@ var Utilities_1 = __webpack_require__(1);
 var index_1 = __webpack_require__(78);
 var Panel_Props_1 = __webpack_require__(79);
 var Layer_1 = __webpack_require__(30);
-var Overlay_1 = __webpack_require__(251);
+var Overlay_1 = __webpack_require__(255);
 var Popup_1 = __webpack_require__(65);
-var Button_1 = __webpack_require__(15);
+var Button_1 = __webpack_require__(26);
 var Styling_1 = __webpack_require__(3);
-var stylesImport = __webpack_require__(255);
+var stylesImport = __webpack_require__(259);
 var styles = stylesImport;
 var theme = Styling_1.getTheme();
 var Panel = /** @class */ (function (_super) {
@@ -17470,29 +17539,29 @@ exports.Panel = Panel;
 
 
 /***/ }),
-/* 251 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
-tslib_1.__exportStar(__webpack_require__(252), exports);
+tslib_1.__exportStar(__webpack_require__(256), exports);
 
 
 /***/ }),
-/* 252 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
-tslib_1.__exportStar(__webpack_require__(253), exports);
+tslib_1.__exportStar(__webpack_require__(257), exports);
 
 
 /***/ }),
-/* 253 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17501,7 +17570,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = __webpack_require__(0);
 var React = __webpack_require__(2);
 var Utilities_1 = __webpack_require__(1);
-var stylesImport = __webpack_require__(254);
+var stylesImport = __webpack_require__(258);
 var styles = stylesImport;
 var Overlay = /** @class */ (function (_super) {
     tslib_1.__extends(Overlay, _super);
@@ -17529,7 +17598,7 @@ exports.Overlay = Overlay;
 
 
 /***/ }),
-/* 254 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17544,7 +17613,7 @@ exports.rootIsDark = "rootIsDark_35fc8879";
 
 
 /***/ }),
-/* 255 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
