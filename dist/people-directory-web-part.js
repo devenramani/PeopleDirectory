@@ -16388,15 +16388,15 @@ var PeopleList = (function (_super) {
     __extends(PeopleList, _super);
     function PeopleList(props) {
         var _this = _super.call(this, props) || this;
-        _this._showPanel = function () {
-            _this.setState({ showPanel: true });
+        _this._showPanel = function (p) {
+            _this.setState({ showPanel: true, panelData: p });
         };
         _this._hidePanel = function () {
             _this.setState({ showPanel: false });
         };
         _this._onRenderCompactCard = function (p) {
             return (React.createElement("div", { className: PeopleList_module_scss_1.default.compactCard },
-                React.createElement(Persona_1.Persona, { primaryText: p.name, secondaryText: p.email, tertiaryText: p.phone, imageUrl: p.photoUrl, imageAlt: p.name, size: Persona_1.PersonaSize.size72 })));
+                React.createElement(Persona_1.Persona, { primaryText: p.name, secondaryText: p.email, tertiaryText: p.phone, imageUrl: p.photoUrl, imageAlt: p.name, size: Persona_1.PersonaSize.size100 })));
         };
         _this._onRenderExpandedCard = function (p) {
             return (React.createElement("div", { className: PeopleList_module_scss_1.default.expandedCard },
@@ -16404,21 +16404,12 @@ var PeopleList = (function (_super) {
                 p.function,
                 p.skills,
                 p.projects,
-                React.createElement(Link_1.Link, { onClick: _this._showPanel }, " Show more")));
-        };
-        _this._onCalloutDismiss = function (event) {
-            _this.setState({
-                showCallOut: false,
-            });
+                React.createElement(Link_1.Link, { onClick: function () { return _this._showPanel(p); } }, " Show more")));
         };
         _this.state = {
-            showCallOut: false,
-            calloutElement: null,
-            person: null,
-            showPanel: false
+            showPanel: false,
+            panelData: ""
         };
-        //this._onPersonaClicked = this._onPersonaClicked.bind(this);
-        _this._onCalloutDismiss = _this._onCalloutDismiss.bind(_this);
         return _this;
     }
     PeopleList.prototype.render = function () {
@@ -16433,7 +16424,8 @@ var PeopleList = (function (_super) {
                 // a search query (but not when navigated to the Search tab without
                 // providing a query yet)
                 React.createElement("div", { className: 'ms-textAlignCenter' }, strings.NoPeopleFoundLabel),
-            React.createElement(Panel_1.Panel, { isOpen: this.state.showPanel, type: Panel_1.PanelType.medium, onDismiss: this._hidePanel }),
+            React.createElement(Panel_1.Panel, { isOpen: this.state.showPanel, type: Panel_1.PanelType.medium, onDismiss: this._hidePanel },
+                React.createElement(Persona_1.Persona, { primaryText: this.state.panelData.name, secondaryText: this.state.panelData.email, tertiaryText: this.state.panelData.phone, imageUrl: this.state.panelData.photoUrl, imageAlt: this.state.panelData.name, size: Persona_1.PersonaSize.size100 })),
             this.props.people.length > 0 &&
                 // for each retrieved person, create a persona card with the retrieved
                 // information

@@ -15,7 +15,7 @@ import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
 import { Link } from 'office-ui-fabric-react/lib/Link';
 import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
 import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
-
+import { VerticalDivider } from 'office-ui-fabric-react/lib/Divider';
 import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 
 export class PeopleList extends React.Component<IPeopleListProps, IPeopleListState> {
@@ -23,14 +23,10 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
     super(props);
 
     this.state = {
-      showCallOut: false,
-      calloutElement: null,
-      person: null,
-      showPanel: false
+     
+      showPanel: false,
+      panelData: ""
     };
-
-    //this._onPersonaClicked = this._onPersonaClicked.bind(this);
-    this._onCalloutDismiss = this._onCalloutDismiss.bind(this);
   }
 
   public render(): React.ReactElement<IPeopleListProps> {
@@ -47,7 +43,7 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
           <div className='ms-textAlignCenter'>{strings.NoPeopleFoundLabel}</div>}
 
         <Panel isOpen={this.state.showPanel} type={PanelType.medium} onDismiss={this._hidePanel}>
-
+            <Persona primaryText={this.state.panelData.name} secondaryText={this.state.panelData.email} tertiaryText={this.state.panelData.phone} imageUrl={this.state.panelData.photoUrl} imageAlt={this.state.panelData.name} size={PersonaSize.size100} /> 
         </Panel>
 
         {this.props.people.length > 0 &&
@@ -68,7 +64,6 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
               renderData: p
             };
 
-
             return (
               <div className={`ms-Grid-col  ${styles.persona_card}`}>
 
@@ -88,8 +83,8 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
     );
   }
 
-  private _showPanel = (): void => {
-    this.setState({ showPanel: true });
+  private _showPanel = (p): void => {
+    this.setState({ showPanel: true, panelData : p});
   }
 
   private _hidePanel = (): void => {
@@ -99,7 +94,7 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
   private _onRenderCompactCard = (p): JSX.Element => {
     return (
       <div className={styles.compactCard}>
-        <Persona primaryText={p.name} secondaryText={p.email} tertiaryText={p.phone} imageUrl={p.photoUrl} imageAlt={p.name} size={PersonaSize.size72} />
+        <Persona primaryText={p.name} secondaryText={p.email} tertiaryText={p.phone} imageUrl={p.photoUrl} imageAlt={p.name} size={PersonaSize.size100} />
       </div>
     );
   }
@@ -108,18 +103,17 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
 
     return (
       <div className={styles.expandedCard}>
+      
         {p.department}
+        
         {p.function}
+        
         {p.skills}
+       
         {p.projects}
-        <Link onClick={ this._showPanel}> Show more</Link>
+        
+        <Link onClick={ () => this._showPanel(p) }> Show more</Link>
       </div>
     );
-  }
-
-  private _onCalloutDismiss = (event) => {
-    this.setState({
-      showCallOut: false,
-    });
   }
 }

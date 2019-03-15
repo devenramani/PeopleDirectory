@@ -9,5 +9,4 @@ export declare class PeopleList extends React.Component<IPeopleListProps, IPeopl
     private _hidePanel;
     private _onRenderCompactCard;
     private _onRenderExpandedCard;
-    private _onCalloutDismiss;
 }
