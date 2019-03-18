@@ -44,6 +44,21 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
 
         <Panel isOpen={this.state.showPanel} type={PanelType.medium} onDismiss={this._hidePanel}>
             <Persona primaryText={this.state.panelData.name} secondaryText={this.state.panelData.email} tertiaryText={this.state.panelData.phone} imageUrl={this.state.panelData.photoUrl} imageAlt={this.state.panelData.name} size={PersonaSize.size100} /> 
+            
+            <div><b> Email :</b> {this.state.panelData.email} </div>
+      
+            <div><b> Department :</b> {this.state.panelData.department} </div>
+            
+            <div><b> Function :</b>   {this.state.panelData.function} </div>
+            
+            <div><b> Mobile :</b>   {this.state.panelData.mobile} </div>
+
+            <div><b> Phone :</b>   {this.state.panelData.phone} </div>
+
+            <div><b> Skills :</b>   {this.state.panelData.skills} </div>
+
+            <div><b> Projects :</b>   {this.state.panelData.projects} </div>
+
         </Panel>
 
         {this.props.people.length > 0 &&
@@ -103,16 +118,20 @@ export class PeopleList extends React.Component<IPeopleListProps, IPeopleListSta
 
     return (
       <div className={styles.expandedCard}>
+
+      <div><b> Email :</b> {p.email} </div>
       
-        {p.department}
+       <div><b> Department :</b> {p.department} </div>
         
-        {p.function}
+       <div><b> Function :</b>   {p.function} </div>
         
-        {p.skills}
-       
-        {p.projects}
+       <div><b> Mobile :</b>   {p.mobile} </div>
+
+       <div><b> Phone :</b>   {p.phone} </div>
         
-        <Link onClick={ () => this._showPanel(p) }> Show more</Link>
+        <div>
+          <Link onClick={ () => this._showPanel(p) }> Show more</Link>
+        </div>  
       </div>
     );
   }
